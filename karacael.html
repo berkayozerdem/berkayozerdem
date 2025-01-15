@@ -117,6 +117,74 @@
             background-color: #ff0000;
             transform: scale(1.05);
         }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+        .contact-icons img {
+            width: 120px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .contact-icons a:hover img, 
+        .contact-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            .header-buttons {
+                flex-direction: column;
+                position: static;
+                margin-top: 10px;
+                gap: 5px;
+            }
+            .header-buttons a {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+            .header-content h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            .header-content p {
+                font-size: 1rem;
+            }
+            .karaca-image {
+                max-width: 400px;
+            }
+            .content {
+                font-size: 1rem;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-logo {
+                font-size: 1.5rem;
+            }
+            .header-buttons a {
+                padding: 5px 10px;
+                font-size: 0.8rem;
+            }
+            .header-content h1 {
+                font-size: 1.8rem;
+            }
+            .header-content p {
+                font-size: 0.9rem;
+            }
+            .karaca-image {
+                max-width: 300px;
+            }
+            .content {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -131,7 +199,7 @@
         </div>
         <div class="header-content">
             <h1>Karaca El Petrol Social Media Management and Content Creation</h1>
-            <p>October 2023 - October 2024 /Remote</p>
+            <p>October 2023 - October 2024 / Remote</p>
         </div>
     </header>
     <section>
@@ -146,29 +214,18 @@
         </div>
         <a href="index.html" class="back-button">Back to Portfolio</a>
     </section>
-</body>
-</html>
-<section class="contact">
-    <h2>Get in <span style="color: red;">Touch</span>.</h2>
-    <p>So that we can talk more about...</p>
-    <div class="contact-icons" style="display: flex; justify-content: center; align-items: center; gap: 50px; margin-top: 20px;">
-        <!-- Mail İkonu -->
-        <a href="mailto:berkayozerdem@icloud.com" title="Email" style="transition: transform 0.3s ease;">
-            <img src="11.png" alt="Email" style="width: 120px; height: auto; transition: transform 0.3s ease;">
-        </a>
-        <!-- Ortadaki Görsel -->
-        <img src="IMG_6967.PNG" alt="Middle Icon" style="width: 120px; height: auto; transition: transform 0.3s ease;">
-        <!-- LinkedIn İkonu -->
-        <a href="https://www.linkedin.com/in/berkay-ozerdem" target="_blank" title="LinkedIn" style="transition: transform 0.3s ease;">
-            <img src="10.png" alt="LinkedIn" style="width: 120px; height: auto; transition: transform 0.3s ease;">
-        </a>
-    </div>
-    <style>
-        .contact-icons a:hover img, 
-        .contact-icons img:hover {
-            transform: scale(1.2); /* Büyüme efekti */
-        }
-    </style>
-</section>
+    <section class="contact">
+        <h2>Get in <span style="color: red;">Touch</span>.</h2>
+        <p>So that we can talk more about...</p>
+        <div class="contact-icons">
+            <a href="mailto:berkayozerdem@icloud.com" title="Email">
+                <img src="11.png" alt="Email">
+            </a>
+            <img src="IMG_6967.PNG" alt="Middle Icon">
+            <a href="https://www.linkedin.com/in/berkay-ozerdem" target="_blank" title="LinkedIn">
+                <img src="10.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
 </body>
 </html>
