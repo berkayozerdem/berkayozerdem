@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ege AI Project - Berkay ÖZERDEM's Portfolio">
+    <title>Ege AI Project - Berkay ÖZERDEM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background-color: #121212;
+            line-height: 1.6;
+            text-align: center;
+        }
+        header {
+            padding: 20px 20px 60px;
+            background-color: #121212;
+            position: relative;
+        }
+        .header-logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+        }
+        .header-logo:hover {
+            color: #ff0000;
+            transform: scale(1.05);
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+        .header-buttons {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            gap: 10px;
+        }
+        .header-buttons a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #121212;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .header-buttons a:hover {
+            background-color: #ff0000;
+            transform: scale(1.05);
+        }
+        .header-content {
+            margin-top: 80px;
+        }
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .header-content p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-top: 10px;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .egeai-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: block;
+        }
+        .additional-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1000px;
+        }
+        .additional-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            color: #ccc;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: left;
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #1e1e1e;
+        }
+        .content ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #ff0000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .back-button:hover {
+            background-color: #ff0000;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="header-logo">ÖZERDEM</a>
+        <div class="header-buttons">
+            <a href="experiences.html">Experiences</a>
+            <a href="projects.html">Projects</a>
+            <a href="volunteers.html">Volunteers</a>
+            <a href="collaborations.html">Collaborations</a>
+            <a href="sectoraltrainings.html">Sectoral Trainings</a>
+        </div>
+        <div class="header-content">
+            <h1>Ege AI - Aegean Region Artificial Intelligence Guide</h1>
+            <p>My University Graduation Project</p>
+        </div>
+    </header>
+    <section>
+        <img src="4.png" alt="Ege AI Logo" class="egeai-image">
+        <div class="content">
+            <p>The Ege AI project aims to showcase the unique beauty, history, and stories of the Aegean region through a digital experience that touches the hearts of its users. Here are the highlights of the project:</p>
+            <h3>Why Artificial Intelligence and LLM?</h3>
+            <ul>
+                <li>Modern users desire quick and personalized access to information. Leveraging LLM (Large Language Models), Ege AI provides context-aware responses, mythological storytelling, and personalized recommendations.</li>
+                <li>Using GPT-3.5, RAG (Retrieval-Augmented Generation), and other cutting-edge AI technologies, we aim to deliver an interactive and creative user experience.</li>
+            </ul>
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>Data Processing: PyPDFLoader, TextSplitter, ChromaDB</li>
+                <li>Response Generation: GPT-3.5, RAG</li>
+                <li>Platform Development: React Native, LangChain</li>
+            </ul>
+            <h3>Project Features</h3>
+            <ul>
+                <li>Chatbot: An AI-powered chatbot at the heart of the project, answering Aegean-related queries on both web and mobile platforms.</li>
+                <li>Website: Showcasing stories, mythological narratives, and travel routes from the Aegean region.</li>
+                <li>Mobile App: Currently under development using React Native to ensure accessibility anytime and anywhere.</li>
+                <li>Social Media: Sharing Ege AI stories, travel tips, and regional beauty on Instagram and LinkedIn.</li>
+            </ul>
+            <p>This project is a blend of technology and culture, reflecting the unique essence of the Aegean region while utilizing modern tools for an engaging user experience.</p>
+        </div>
+        <div class="additional-images">
+            <img src="IMG_6627.jpeg" alt="Project Presentation">
+            <img src="1 kopyası.png" alt="Detailed Poster">
+            <img src="2 kopyası.png" alt="Ege AI App Preview">
+            <img src="Simulator Screenshot - iPhone 16 Pro - 2025-01-10 at 01.29.57.png" alt="Mobile App Screenshot 1">
+            <img src="Simulator Screenshot - iPhone 16 Pro - 2025-01-10 at 01.30.04.png" alt="Mobile App Screenshot 2">
+            <img src="Simulator Screenshot - iPhone 16 Pro - 2025-01-10 at 01.30.10.png" alt="Mobile App Screenshot 3">
+            <img src="Ekran Resmi 2025-01-10 01.28.47.png" alt="Web Interface">
+            <img src="Ekran Resmi 2025-01-10 01.28.56.png" alt="Chat Empty">
+            <img src="WhatsApp Image 2025-01-09 at 00.06.34.jpeg" alt="Chat Screenshot">
+        </div>
+        <a href="index.html" class="back-button">Back to Portfolio</a>
+    </section>
+</body>
+</html>
+<section class="contact">
+    <h2>Get in <span style="color: red;">Touch</span>.</h2>
+    <p>So that we can talk more about...</p>
+    <div class="contact-icons" style="display: flex; justify-content: center; align-items: center; gap: 50px; margin-top: 20px;">
+        <!-- Mail İkonu -->
+        <a href="mailto:berkayozerdem@icloud.com" title="Email" style="transition: transform 0.3s ease;">
+            <img src="11.png" alt="Email" style="width: 120px; height: auto; transition: transform 0.3s ease;">
+        </a>
+        <!-- Ortadaki Görsel -->
+        <img src="IMG_6967.PNG" alt="Middle Icon" style="width: 120px; height: auto; transition: transform 0.3s ease;">
+        <!-- LinkedIn İkonu -->
+        <a href="https://www.linkedin.com/in/berkay-ozerdem" target="_blank" title="LinkedIn" style="transition: transform 0.3s ease;">
+            <img src="10.png" alt="LinkedIn" style="width: 120px; height: auto; transition: transform 0.3s ease;">
+        </a>
+    </div>
+    <style>
+        .contact-icons a:hover img, 
+        .contact-icons img:hover {
+            transform: scale(1.2); /* Büyüme efekti */
+        }
+    </style>
+</section>
+</body>
+</html>
