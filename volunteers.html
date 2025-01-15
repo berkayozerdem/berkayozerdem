@@ -74,7 +74,8 @@
             margin: 0 auto;
         }
         .logos img {
-            width: 250px;
+            width: 100%;
+            max-width: 250px;
             height: auto;
             border: 2px solid #ddd;
             border-radius: 10px;
@@ -128,6 +129,42 @@
         .contact-icons a:hover img, 
         .contact-icons img:hover {
             transform: scale(1.2);
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            .header-buttons {
+                flex-direction: column;
+                position: static;
+                margin-top: 10px;
+                gap: 5px;
+            }
+            .header-buttons a {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+            .header-content h1 {
+                font-size: 2rem;
+            }
+            .logos img {
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-logo {
+                font-size: 1.5rem;
+            }
+            .header-buttons a {
+                padding: 5px 10px;
+                font-size: 0.8rem;
+            }
+            .header-content h1 {
+                font-size: 1.8rem;
+            }
+            .logos img {
+                max-width: 150px;
+            }
         }
     </style>
 </head>
