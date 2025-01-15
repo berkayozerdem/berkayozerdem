@@ -27,11 +27,11 @@
             font-size: 2rem;
             font-weight: 700;
             color: #fff;
-            text-decoration: none; /* Alt çizgiyi kaldırır */
+            text-decoration: none;
         }
         .header-logo:hover {
-            color: #ff0000; /* Hover sırasında renk değişimi */
-            transform: scale(1.05); /* Hafif büyüme efekti */
+            color: #ff0000;
+            transform: scale(1.05);
             transition: color 0.3s ease, transform 0.2s ease;
         }
         .header-buttons {
@@ -61,7 +61,7 @@
             align-items: center;
             flex-direction: column;
             gap: 10px;
-            margin-top: 80px; /* Header butonları için yer bırakıldı */
+            margin-top: 80px;
         }
         .header-content h1 {
             font-size: 2.5rem;
@@ -117,6 +117,59 @@
             background-color: #ff0000;
             transform: scale(1.05);
         }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            .header-logo {
+                font-size: 1.8rem;
+            }
+            .header-buttons {
+                flex-direction: column;
+                position: static;
+                margin-top: 10px;
+                gap: 5px;
+            }
+            .header-buttons a {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+            .header-content h1 {
+                font-size: 2rem;
+            }
+            .header-content p {
+                font-size: 1rem;
+            }
+            .bakircay-image {
+                max-width: 400px;
+            }
+            .content {
+                font-size: 1rem;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-logo {
+                font-size: 1.5rem;
+            }
+            .header-buttons a {
+                padding: 5px 10px;
+                font-size: 0.8rem;
+            }
+            .header-content h1 {
+                font-size: 1.8rem;
+            }
+            .header-content p {
+                font-size: 0.9rem;
+            }
+            .bakircay-image {
+                max-width: 300px;
+            }
+            .content {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -149,29 +202,5 @@
         <img src="e35cc563-06c3-405d-a06e-3752ea3ec6eb.jpg" alt="Bakircay YBS Team" class="bakircay-image">
         <a href="index.html" class="back-button">Back to Portfolio</a>
     </section>
-</body>
-</html>
-<section class="contact">
-    <h2>Get in <span style="color: red;">Touch</span>.</h2>
-    <p>So that we can talk more about...</p>
-    <div class="contact-icons" style="display: flex; justify-content: center; align-items: center; gap: 50px; margin-top: 20px;">
-        <!-- Mail İkonu -->
-        <a href="mailto:berkayozerdem@icloud.com" title="Email" style="transition: transform 0.3s ease;">
-            <img src="11.png" alt="Email" style="width: 120px; height: auto; transition: transform 0.3s ease;">
-        </a>
-        <!-- Ortadaki Görsel -->
-        <img src="IMG_6967.PNG" alt="Middle Icon" style="width: 120px; height: auto; transition: transform 0.3s ease;">
-        <!-- LinkedIn İkonu -->
-        <a href="https://www.linkedin.com/in/berkay-ozerdem" target="_blank" title="LinkedIn" style="transition: transform 0.3s ease;">
-            <img src="10.png" alt="LinkedIn" style="width: 120px; height: auto; transition: transform 0.3s ease;">
-        </a>
-    </div>
-    <style>
-        .contact-icons a:hover img, 
-        .contact-icons img:hover {
-            transform: scale(1.2); /* Büyüme efekti */
-        }
-    </style>
-</section>
 </body>
 </html>
