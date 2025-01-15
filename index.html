@@ -55,6 +55,7 @@
             align-items: center;
             gap: 20px;
             margin-top: 60px; /* Header butonları için yer bırakıldı */
+            flex-wrap: wrap; /* Ekran daraldığında satır atlar */
         }
         .header-content img {
             width: 100px;
@@ -90,6 +91,56 @@
             transform: scale(1.1); /* Büyüme efekti */
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Gölge efekti */
         }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            .header-buttons {
+                flex-direction: column;
+                position: static;
+                margin-top: 10px;
+            }
+            .header-buttons a {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+            .header-content h1 {
+                font-size: 2rem;
+            }
+            .header-content h2 {
+                font-size: 1rem;
+            }
+            .clients .logos {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            .clients .logos img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-logo {
+                font-size: 1.5rem;
+            }
+            .header-buttons a {
+                padding: 5px 10px;
+                font-size: 0.8rem;
+            }
+            .header-content {
+                flex-direction: column;
+            }
+            .header-content img {
+                width: 80px;
+            }
+            .clients .logos {
+                grid-template-columns: 1fr;
+            }
+            .clients .logos img {
+                width: 250px;
+                height: 250px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -108,13 +159,12 @@
         </div>
         <h2>I am a graduate of Izmir Bakircay University,<br> Department of Management Information Systems.</h2>
     </header>
-</header>
-<section class="about">
-    <h2>About Me</h2>
-    <div style="max-width: 800px; margin: 20px auto; color: #ccc; font-size: 1.2rem; line-height: 1.8; text-align: left; border: 2px solid ; border-radius: 10px; padding: 20px; background-color: #1e1e1e;">
-        <p>I am a 4th year student at İzmir Bakırçay University, Department of Management Information Systems. I have been a manager in university groups and have taken an active role in various projects. I work part-time in the Project Management Department at ERPIDE Yazılım Sanayi A.Ş. I completed my summer internship at the TRT Information Technologies Department. I was accepted to the Google Turkey Data Engineering Bootcamp and Defense Industry 402 programs. I am also continuing my education as a full scholarship holder at the Google Turkey Artificial Intelligence and Technology Academy.</p>
-    </div>
-</section>
+    <section class="about">
+        <h2>About Me</h2>
+        <div style="max-width: 800px; margin: 20px auto; color: #ccc; font-size: 1.2rem; line-height: 1.8; text-align: left; border: 2px solid ; border-radius: 10px; padding: 20px; background-color: #1e1e1e;">
+            <p>I am a 4th year student at İzmir Bakırçay University, Department of Management Information Systems. I have been a manager in university groups and have taken an active role in various projects. I work part-time in the Project Management Department at ERPIDE Yazılım Sanayi A.Ş. I completed my summer internship at the TRT Information Technologies Department. I was accepted to the Google Turkey Data Engineering Bootcamp and Defense Industry 402 programs. I am also continuing my education as a full scholarship holder at the Google Turkey Artificial Intelligence and Technology Academy.</p>
+        </div>
+    </section>
 
     <section id="clients" class="clients">
         <h2>Companies where I have previous <span style="color: red;">volunteer, work or internship</span> experience</h2>
@@ -148,12 +198,6 @@
                 <img src="10.png" alt="LinkedIn" style="width: 120px; height: auto; transition: transform 0.3s ease;">
             </a>
         </div>
-        <style>
-            .contact-icons a:hover img, 
-            .contact-icons img:hover {
-                transform: scale(1.2); /* Büyüme efekti */
-            }
-        </style>
     </section>
 </body>
 </html>
