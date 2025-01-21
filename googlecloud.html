@@ -83,6 +83,19 @@
             border-radius: 10px;
             display: block;
         }
+        .additional-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1000px;
+        }
+        .additional-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }    
         .content {
             max-width: 800px;
             margin: 20px auto;
@@ -143,7 +156,12 @@
                 font-size: 1rem;
                 padding: 15px;
             }
+            .additional-images {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
         }
+        
 
         @media (max-width: 480px) {
             .header-logo {
@@ -166,7 +184,12 @@
                 font-size: 0.9rem;
                 padding: 10px;
             }
+            .additional-images {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
         }
+        
     </style>
 </head>
 <body>
@@ -198,6 +221,14 @@
                 <li>Creating a dataflow pipeline for a real-time dashboard with Dataflow</li>
                 <li>Loading data into Big Query using Cloud Run Functions</li>
             </ul>
+        </div>
+        <div class="additional-images">
+            <img src="IMG_7682.jpeg" alt="Google Picture">
+            <img src="1737404098516.jpeg" alt="Google Office">
+            <img src="1737404098841.jpeg" alt="Google Corner">
+            <img src="1737404100905.jpeg" alt="Google Gemini">
+            <img src="1737404098236.jpeg" alt="Google Partners">
+            <img src="1737404098223.jpeg" alt="Google AI">
         </div>
         <a href="index.html" class="back-button">Back to Portfolio</a>
     </section>
