@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Berkay Özerdem</title>
+<meta name="description" content="Berkay Özerdem - Product Manager & AI Systems Builder">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* BASE */
+body {
+  margin:0;
+  font-family:'Inter', sans-serif;
+  background:#f7f7f8;
+  color:#111;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+::selection {
+  background:#111;
+  color:#fff;
+}
+
+a {
+  color:#2563eb;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#1d4ed8;
+}
+
+/* NAV */
+.nav {
+  display:flex;
+  align-items:center;
+  padding:25px;
+  gap:25px;
+  position:sticky;
+  top:0;
+  background:#f7f7f8;
+  z-index:10;
+}
+
+.nav a {
+  color:#666;
+  font-size:14px;
+}
+
+.nav a:hover {
+  color:#000;
+}
+
+/* HERO */
+.hero {
+  text-align:center;
+  margin-top:100px;
+  padding:0 20px;
+}
+
+.hero h1 {
+  font-size:52px;
+  margin:0;
+  letter-spacing:-1.5px;
+}
+
+.hero h2 {
+  font-size:24px;
+  font-weight:400;
+  color:#333;
+  margin-top:10px;
+}
+
+.hero p {
+  margin-top:15px;
+  color:#777;
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.7;
+}
+
+/* SECTIONS */
+.section {
+  max-width:900px;
+  margin:100px auto;
+  padding:0 20px;
+}
+
+.section h2 {
+  font-size:28px;
+  margin-bottom:40px;
+}
+
+/* CARDS */
+.card {
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  padding:28px;
+  border-radius:12px;
+  margin-bottom:20px;
+  transition:all 0.2s ease;
+}
+
+.card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  border-color:#d1d5db;
+}
+
+.card h3 {
+  margin:0 0 5px 0;
+  font-size:18px;
+}
+
+.card span {
+  font-size:13px;
+  color:#888;
+}
+
+.card p {
+  color:#555;
+  line-height:1.7;
+  margin-top:10px;
+}
+
+/* CONTACT */
+.contact {
+  text-align:center;
+  margin:120px 0;
+}
+
+.contact a {
+  margin:0 10px;
+  font-size:14px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero h1 {
+    font-size:40px;
+  }
+
+  .nav {
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .section {
+    margin:60px auto;
+  }
+
+  .card {
+    padding:20px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div style="margin-right:auto; font-weight:600;">Berkay</div>
+  <a href="#work">Work</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <h1>Berkay Özerdem</h1>
+  <h2>
+    I build and optimize systems that connect product, operations and AI.
+  </h2>
+  <p>
+    Management Information Systems graduate focused on building scalable systems across product, operations and AI.
+  </p>
+</header>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <h2>Selected Work</h2>
+
+  <div class="card">
+    <h3>AI Chatbot Platform</h3>
+    <p>
+      Contributed to product and process management of a GPT-based chatbot system using RAG architecture.
+      Coordinated with technical teams and supported workflow design.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Izmirim Card – UX Improvement</h3>
+    <p>
+      Conducted user experience and operational analysis.
+      Developed proposals that were approved and implemented into the live system.
+    </p>
+  </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Novus</h3>
+    <span>Product Manager | 06.2025 – Present</span>
+    <p>
+      • Managed end-to-end operations across enterprise projects<br>
+      • Coordinated technical, client and operations teams<br>
+      • Identified bottlenecks and ensured operational continuity<br>
+      • Improved efficiency through KPI-driven optimization
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Izmir Innovation and Technology Inc.</h3>
+    <span>AI & Smart City Technologies Intern | 02.2025 – 05.2025</span>
+    <p>
+      • Analyzed real-life field operations and process flows<br>
+      • Identified operational issues and developed solutions<br>
+      • Coordinated technical and operations teams for efficiency
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>ERPIDE Software Inc.</h3>
+    <span>Project Management Intern / Part-time | 07.2023 – 01.2025</span>
+    <p>
+      • Supported project planning and stakeholder communication<br>
+      • Coordinated cross-functional teams<br>
+      • Identified inefficiencies and improved processes<br>
+      • Tracked timelines to support on-time delivery
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>TRT General Directorate</h3>
+    <span>IT Intern | 07.2024 – 08.2024</span>
+    <p>
+      • Analyzed system behavior during testing processes<br>
+      • Contributed to issue reporting and feedback loops<br>
+      • Improved process efficiency through analysis
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Sporlondo</h3>
+    <span>Product Management Intern | 08.2022 – 02.2023</span>
+    <p>
+      • Analyzed user feedback and market data<br>
+      • Contributed to product development processes<br>
+      • Improved user experience and product decisions
+    </p>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p style="margin-bottom:10px;">
+    Always open to interesting conversations.
+  </p>
+  <p>
+    <a href="mailto:berkayozerdem@icloud.com">Email</a> |
+    <a href="https://www.linkedin.com/in/berkay-ozerdem" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </p>
+</section>
+
+</body>
+</html>
