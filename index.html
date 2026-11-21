@@ -1,13 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Berkay Özerdem</title>
-<meta name="description" content="Berkay Özerdem - Assistant IT Specialist at TRT, Management Information Systems graduate and Master's student.">
+<title>Berkay Özerdem – Assistant IT Specialist at TRT</title>
+<meta name="description" content="Berkay Özerdem – Assistant IT Specialist at TRT, Management Information Systems graduate and Master's student with a background in product management and AI-driven solutions.">
+<meta property="og:title" content="Berkay Özerdem – Assistant IT Specialist at TRT">
+<meta property="og:description" content="Information technologies, product management and AI-driven solutions.">
+<meta property="og:type" content="profile">
+<meta name="theme-color" content="#f7f7f8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -36,6 +42,12 @@ a {
 
 a:hover {
   color:#1d4ed8;
+}
+
+a:focus-visible {
+  outline:2px solid #2563eb;
+  outline-offset:3px;
+  border-radius:3px;
 }
 
 .nav {
@@ -119,7 +131,7 @@ a:hover {
 
 .card span {
   font-size:13px;
-  color:#888;
+  color:#767676;
 }
 
 .card p {
@@ -157,9 +169,15 @@ a:hover {
 
 footer {
   text-align:center;
-  color:#999;
+  color:#767676;
   font-size:12px;
   padding:20px;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  .card { transition:none; }
+  .card:hover { transform:none; }
 }
 
 @media(max-width:768px) {
@@ -195,7 +213,7 @@ footer {
 <body>
 
 <!-- NAVIGATION -->
-<nav class="nav">
+<nav class="nav" aria-label="Main">
   <div style="margin-right:auto;font-weight:600;">Berkay</div>
   <a href="#about">About</a>
   <a href="#experience">Experience</a>
@@ -210,10 +228,12 @@ footer {
   <h2>Assistant IT Specialist at TRT</h2>
   <p>
     Management Information Systems graduate and Master's student
-    with experience in information technologies, product management,
-    AI-driven solutions and technology operations.
+    with a background in information technologies, product management
+    and AI-driven solutions.
   </p>
 </header>
+
+<main>
 
 <!-- ABOUT -->
 <section class="section" id="about">
@@ -221,25 +241,25 @@ footer {
 
   <div class="about-text">
     <p>
-      I began my academic journey by studying Management Information
-      Systems at İzmir Bakırçay University. During my undergraduate
-      studies, I served as the Head of the Social Media Department at
-      the YBS Community, where I developed my organizational and
-      communication skills while contributing to the university community.
+      I studied Management Information Systems at İzmir Bakırçay
+      University, where I also served as Head of the Social Media
+      Department at the YBS Community. In that role I developed my
+      organizational and communication skills while contributing to
+      the university community.
     </p>
 
     <p>
-      In September 2026, I continued my academic development by enrolling
-      in a thesis-based Master's program in Management Information Systems
-      at İzmir Bakırçay University.
+      I began my career in project and product management, first as a
+      Junior Project Manager at ERPIDE Software and then as a Junior
+      Product Manager at Novus, where I worked on enterprise technology
+      projects and AI-driven products.
     </p>
 
     <p>
-      Professionally, I worked as a Jr. Product Manager at Novus, gaining
-      experience in product management, AI-driven solutions and technology
-      operations. I currently serve as an Assistant IT Specialist at the
-      Turkish Radio and Television Corporation (TRT), continuing my
-      professional career in the field of Information Technologies.
+      In November 2026, I joined the Turkish Radio and Television
+      Corporation (TRT) as an Assistant IT Specialist. I am also pursuing
+      a thesis-based Master's degree in Management Information Systems at
+      İzmir Bakırçay University, which I started in September 2026.
     </p>
   </div>
 </section>
@@ -253,19 +273,18 @@ footer {
     <h3>Turkish Radio and Television Corporation (TRT)</h3>
     <span>Assistant IT Specialist | 11.2026 – Present</span>
     <p>
-      Continuing my professional career in information technologies
-      and contributing to institutional technology processes.
+      Supporting institutional information technology processes at TRT.
     </p>
   </div>
 
   <!-- NOVUS -->
   <div class="card">
     <h3>Novus</h3>
-    <span>Jr. Product Manager | 06.2025 – 11.2026</span>
+    <span>Junior Product Manager | 06.2025 – 11.2026</span>
     <ul>
       <li>
-        Worked on enterprise technology projects, coordinating
-        customer requirements, technical teams and project processes.
+        Coordinated customer requirements, technical teams and project
+        processes on enterprise technology projects.
       </li>
       <li>
         Supported project planning, roadmap development and
@@ -273,25 +292,25 @@ footer {
       </li>
       <li>
         Delivered product demonstrations and onboarding sessions
-        based on customer-specific use cases.
+        tailored to customer-specific use cases.
       </li>
       <li>
         Coordinated PoC, testing, acceptance and go-live processes.
       </li>
       <li>
-        Contributed to the development and testing of Dot, Nano,
+        Contributed to the development and testing of the Dot, Nano,
         Vesper and Call products.
       </li>
       <li>
-        Prepared product documentation and user guides, and
-        communicated feedback to technical teams.
+        Prepared product documentation and user guides, and relayed
+        customer feedback to technical teams.
       </li>
     </ul>
   </div>
 
   <!-- IZMIR INNOVATION -->
   <div class="card">
-    <h3>Izmir Innovation and Technology Inc.</h3>
+    <h3>İzmir Innovation and Technology Inc.</h3>
     <span>Artificial Intelligence and Smart City Technologies Intern | 02.2025 – 05.2025</span>
     <ul>
       <li>
@@ -300,23 +319,23 @@ footer {
       </li>
       <li>
         Analyzed field observations and shared findings with
-        relevant teams.
+        the relevant teams.
       </li>
       <li>
-        Prepared a proposal report for İzmirim Kart focused on
-        improving tourist experiences through digital solutions.
+        Prepared a proposal report for İzmirim Kart on improving
+        the tourist experience through digital solutions.
       </li>
     </ul>
   </div>
 
   <!-- AI ACADEMY -->
   <div class="card">
-    <h3>Yapay Zeka ve Teknoloji Akademisi</h3>
+    <h3>Artificial Intelligence and Technology Academy</h3>
     <span>Artificial Intelligence Applications Development Scholar | 11.2024 – 09.2025</span>
     <p>
-      Participated in the Artificial Intelligence Applications
-      Development program, gaining experience in AI-focused projects
-      and collaborative development processes.
+      Completed the Artificial Intelligence Applications Development
+      program, working on AI-focused projects in collaborative teams
+      (see Pharmatox and LearnX below).
     </p>
   </div>
 
@@ -326,8 +345,8 @@ footer {
     <span>IT Intern | 07.2024 – 08.2024</span>
     <ul>
       <li>
-        Examined the use of Microsoft Azure DevOps in project management
-        and software development processes.
+        Examined how Microsoft Azure DevOps is used in project
+        management and software development.
       </li>
       <li>
         Researched Agile, Scrum, Kanban and Git.
@@ -337,7 +356,7 @@ footer {
         20 modules for TRT employees.
       </li>
       <li>
-        Presented the work to the Deputy Head of the Information
+        Presented the guide to the Deputy Head of the Information
         Technologies Department.
       </li>
     </ul>
@@ -346,15 +365,15 @@ footer {
   <!-- ERPIDE -->
   <div class="card">
     <h3>ERPIDE Software Inc.</h3>
-    <span>Jr. Project Manager | 09.2023 – 01.2025</span>
+    <span>Junior Project Manager | 09.2023 – 01.2025</span>
     <ul>
       <li>
         Supported project planning, task and timeline tracking,
         and stakeholder communication.
       </li>
       <li>
-        Worked with a five-member team on project coordination
-        and operational activities.
+        Coordinated a five-member team on project and operational
+        activities.
       </li>
       <li>
         Contributed to social media content and digital marketing
@@ -373,7 +392,7 @@ footer {
       </li>
       <li>
         Contributed to product development and user experience
-        improvement processes.
+        improvements.
       </li>
     </ul>
   </div>
@@ -386,11 +405,11 @@ footer {
 
   <div class="card">
     <h3>EGEAI – Aegean Region Tourism Chatbot</h3>
-    <span>TÜBİTAK 2209-A Supported University Project | 4-Member Team</span>
+    <span>TÜBİTAK 2209-A Supported University Project | Team of 4</span>
     <ul>
       <li>
         Coordinated project planning, task allocation and
-        communication between team members.
+        team communication.
       </li>
       <li>
         Supported TÜBİTAK application, reporting and presentation
@@ -404,26 +423,26 @@ footer {
 
   <div class="card">
     <h3>Pharmatox – Medication Leaflet Information Assistant</h3>
-    <span>Artificial Intelligence and Technology Academy | 5-Member Team</span>
+    <span>Artificial Intelligence and Technology Academy | Team of 5</span>
     <ul>
       <li>
-        Participated in an AI-focused project designed to facilitate
-        access to medication leaflet information using image recognition
+        Worked on an AI assistant that makes medication leaflet
+        information easier to access, using image recognition
         and OCR technologies.
       </li>
       <li>
-        Took responsibility for team coordination and project planning.
+        Led team coordination and project planning.
       </li>
     </ul>
   </div>
 
   <div class="card">
     <h3>LearnX – AI-Powered Learning Planning Platform</h3>
-    <span>Artificial Intelligence and Technology Academy | 5-Member Team</span>
+    <span>Artificial Intelligence and Technology Academy | Team of 5</span>
     <ul>
       <li>
-        Participated in developing a platform that creates personalized
-        weekly study plans based on user goals.
+        Worked on a platform that creates personalized weekly
+        study plans based on user goals.
       </li>
       <li>
         Coordinated team planning and project activities.
@@ -438,14 +457,14 @@ footer {
 
   <div class="card">
     <h3>İzmir Bakırçay University</h3>
-    <span>Master's Degree, Management Information Systems | 2026 – 2028</span>
+    <span>Master's Degree, Management Information Systems | 2026 – 2028 (expected)</span>
     <p>Thesis-based graduate program.</p>
   </div>
 
   <div class="card">
     <h3>İzmir Bakırçay University</h3>
     <span>Bachelor's Degree, Management Information Systems | 2020 – 2025</span>
-    <p>100% English program.</p>
+    <p>English-medium program. Head of the Social Media Department, YBS Community.</p>
   </div>
 
   <div class="card">
@@ -458,7 +477,8 @@ footer {
 <section class="contact" id="contact">
   <h2>Contact</h2>
   <p style="margin-bottom:10px;">
-    Always open to interesting conversations.
+    I'm open to conversations about information technologies,
+    product management and AI projects.
   </p>
   <p>
     <a href="mailto:berkayozerdem@icloud.com">Email</a> |
@@ -466,6 +486,8 @@ footer {
        target="_blank" rel="noopener noreferrer">LinkedIn</a>
   </p>
 </section>
+
+</main>
 
 <footer>
   © 2026 Berkay Özerdem
